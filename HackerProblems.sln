@@ -169,6 +169,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KtoZ", "KtoZ", "{1CA1732F-6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperReducedStringProblem", "SuperReducedStringProblem\SuperReducedStringProblem.csproj", "{ED301E3F-D14F-491C-B2EE-E28BE8D54E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonAppetitProblem", "BonAppetitProblem\BonAppetitProblem.csproj", "{45DE2E75-2006-40AD-AD0E-460F60A70428}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -499,6 +501,10 @@ Global
 		{ED301E3F-D14F-491C-B2EE-E28BE8D54E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED301E3F-D14F-491C-B2EE-E28BE8D54E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED301E3F-D14F-491C-B2EE-E28BE8D54E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -584,6 +590,7 @@ Global
 		{42FE448C-2F6A-4B0F-8135-A8E5EBB96B2C} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
 		{95DDB8FE-448D-4806-88A3-57290E7A5614} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
 		{52868C80-5633-49B6-A3F5-0BCE631802BF} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
+		{ED301E3F-D14F-491C-B2EE-E28BE8D54E00} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3950B628-8E17-4C1A-A7D5-07F57CF7B6A0}
