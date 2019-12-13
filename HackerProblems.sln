@@ -171,6 +171,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperReducedStringProblem",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonAppetitProblem", "BonAppetitProblem\BonAppetitProblem.csproj", "{45DE2E75-2006-40AD-AD0E-460F60A70428}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateFeastProblem", "ChocolateFeastProblem\ChocolateFeastProblem.csproj", "{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -505,6 +507,10 @@ Global
 		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45DE2E75-2006-40AD-AD0E-460F60A70428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -591,6 +597,7 @@ Global
 		{95DDB8FE-448D-4806-88A3-57290E7A5614} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
 		{52868C80-5633-49B6-A3F5-0BCE631802BF} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
 		{ED301E3F-D14F-491C-B2EE-E28BE8D54E00} = {1CA1732F-629B-4D58-935C-6DBD0BF52ED6}
+		{45DE2E75-2006-40AD-AD0E-460F60A70428} = {ED2452F1-B095-4762-B49C-960683BD7C9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3950B628-8E17-4C1A-A7D5-07F57CF7B6A0}
