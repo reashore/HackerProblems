@@ -183,6 +183,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongPasswordProblem", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoCharactersProblem", "TwoCharactersProblem\TwoCharactersProblem.csproj", "{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViralAdvertisingProblem", "ViralAdvertisingProblem\ViralAdvertisingProblem.csproj", "{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -541,6 +543,10 @@ Global
 		{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
