@@ -193,6 +193,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalancedBracketsProblem", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedUniformStringsProblem", "WeightedUniformStringsProblem\WeightedUniformStringsProblem.csproj", "{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsExplorationProblem", "MarsExplorationProblem\MarsExplorationProblem.csproj", "{372D073D-060B-4D9A-91A4-8442676E2996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -571,6 +573,10 @@ Global
 		{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372D073D-060B-4D9A-91A4-8442676E2996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372D073D-060B-4D9A-91A4-8442676E2996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372D073D-060B-4D9A-91A4-8442676E2996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372D073D-060B-4D9A-91A4-8442676E2996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
