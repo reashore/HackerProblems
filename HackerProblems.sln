@@ -197,6 +197,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsExplorationProblem", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LisasWorkbookProblem", "LisasWorkbookProblem\LisasWorkbookProblem.csproj", "{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{18303237-6716-4867-ADFD-06F71C46DB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -583,6 +585,10 @@ Global
 		{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18303237-6716-4867-ADFD-06F71C46DB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18303237-6716-4867-ADFD-06F71C46DB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18303237-6716-4867-ADFD-06F71C46DB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18303237-6716-4867-ADFD-06F71C46DB8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
