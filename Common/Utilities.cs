@@ -5,7 +5,7 @@ namespace Common
 {
     public static class Utilities
     {
-        private static string[] ReadData(string fileName)
+        private static string[] ReadTextFile(string fileName)
         {
             string location = Assembly.GetExecutingAssembly().Location;
             string rootDirectory = Path.GetDirectoryName(location);
