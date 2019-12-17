@@ -201,6 +201,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PangramsProblem", "PangramsProblem\PangramsProblem.csproj", "{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramProblem", "AnagramProblem\AnagramProblem.csproj", "{B31DDAB8-684E-4994-8644-22B832F9ECDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunnyStringProblem", "FunnyStringProblem\FunnyStringProblem.csproj", "{5E173202-EA07-41AF-934E-9799744EEB71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -595,6 +599,14 @@ Global
 		{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31DDAB8-684E-4994-8644-22B832F9ECDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31DDAB8-684E-4994-8644-22B832F9ECDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31DDAB8-684E-4994-8644-22B832F9ECDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31DDAB8-684E-4994-8644-22B832F9ECDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E173202-EA07-41AF-934E-9799744EEB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E173202-EA07-41AF-934E-9799744EEB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E173202-EA07-41AF-934E-9799744EEB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E173202-EA07-41AF-934E-9799744EEB71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
