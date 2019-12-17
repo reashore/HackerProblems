@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -53,6 +54,19 @@ namespace Common
             }
 
             return dictionary;
+        }
+
+        private static void Print(IEnumerable<int> array)
+        {
+            Console.Write("[");
+
+            foreach (int item in array)
+            {
+                Console.Write($"{item}, ");
+            }
+
+            Console.Write("]");
+            Console.WriteLine();
         }
     }
 }
