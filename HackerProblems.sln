@@ -207,6 +207,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunnyStringProblem", "Funny
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemstonesProblem", "GemstonesProblem\GemstonesProblem.csproj", "{5F04BFDB-9407-426F-946A-912C1D29DEEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfThronesProblem", "GameOfThronesProblem\GameOfThronesProblem.csproj", "{520962BC-0977-40D0-88D7-14E57AC1D3FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraLongFactorialProblem", "ExtraLongFactorialProblem\ExtraLongFactorialProblem.csproj", "{1D7A4EB5-4869-4AE2-9B73-BAB52B8B249B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -613,6 +617,14 @@ Global
 		{5F04BFDB-9407-426F-946A-912C1D29DEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F04BFDB-9407-426F-946A-912C1D29DEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F04BFDB-9407-426F-946A-912C1D29DEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520962BC-0977-40D0-88D7-14E57AC1D3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520962BC-0977-40D0-88D7-14E57AC1D3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520962BC-0977-40D0-88D7-14E57AC1D3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520962BC-0977-40D0-88D7-14E57AC1D3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7A4EB5-4869-4AE2-9B73-BAB52B8B249B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7A4EB5-4869-4AE2-9B73-BAB52B8B249B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7A4EB5-4869-4AE2-9B73-BAB52B8B249B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7A4EB5-4869-4AE2-9B73-BAB52B8B249B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

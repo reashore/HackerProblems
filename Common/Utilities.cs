@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -33,6 +34,25 @@ namespace Common
         public static string GetDistinctChars(string inputString)
         {
             return new string(inputString.Distinct().ToArray());
+        }
+
+        private static Dictionary<char, int> GetOccurances(string s)
+        {
+            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+
+            foreach (char c in s)
+            {
+                if (!dictionary.ContainsKey(c))
+                {
+                    dictionary[c] = 1;
+                }
+                else
+                {
+                    dictionary[c]++;
+                }
+            }
+
+            return dictionary;
         }
     }
 }
