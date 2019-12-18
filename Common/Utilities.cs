@@ -37,7 +37,7 @@ namespace Common
             return new string(inputString.Distinct().ToArray());
         }
 
-        private static Dictionary<char, int> GetOccurances(string s)
+        public static Dictionary<char, int> GetOccurances(string s)
         {
             Dictionary<char, int> dictionary = new Dictionary<char, int>();
 
@@ -56,7 +56,7 @@ namespace Common
             return dictionary;
         }
 
-        private static void Print(IEnumerable<int> array)
+        public static void Print(IEnumerable<int> array)
         {
             Console.Write("[");
 
@@ -67,6 +67,27 @@ namespace Common
 
             Console.Write("]");
             Console.WriteLine();
+        }
+
+        public static string Sort(string inputString)
+        {
+            return new string(inputString.OrderBy(c => c).ToArray());
+        }
+
+        public static void Print(char[,] array)
+        {
+            int rows = array.GetLength(0);
+            int cols = array.GetLength(1);
+
+            for (int row = 0; row < rows; row++)
+            {
+                for (int col = 0; col < cols; col++)
+                {
+                    Console.Write($"{array[row, col],2} ");
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
