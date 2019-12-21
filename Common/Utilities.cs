@@ -139,7 +139,7 @@ namespace Common
             return testCaseList;
         }
 
-        public static string[] ReadTextFile(string fileName)
+        private static string[] ReadTextFile(string fileName)
         {
             string location = Assembly.GetExecutingAssembly().Location;
             string rootDirectory = Path.GetDirectoryName(location);
