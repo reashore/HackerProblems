@@ -233,6 +233,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulPairsProblem", "Be
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LonelyIntegerProblem", "LonelyIntegerProblem\LonelyIntegerProblem.csproj", "{6081D696-94F3-40D2-8B2C-15B5C1F91B01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlippingBitsProblem", "FlippingBitsProblem\FlippingBitsProblem.csproj", "{257E6F84-FBA5-4888-ACCE-57BF127088C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -687,6 +689,10 @@ Global
 		{6081D696-94F3-40D2-8B2C-15B5C1F91B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6081D696-94F3-40D2-8B2C-15B5C1F91B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6081D696-94F3-40D2-8B2C-15B5C1F91B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257E6F84-FBA5-4888-ACCE-57BF127088C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257E6F84-FBA5-4888-ACCE-57BF127088C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257E6F84-FBA5-4888-ACCE-57BF127088C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257E6F84-FBA5-4888-ACCE-57BF127088C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
