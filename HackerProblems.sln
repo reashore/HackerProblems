@@ -237,6 +237,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlippingBitsProblem", "Flip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumVersusXorProblem", "SumVersusXorProblem\SumVersusXorProblem.csproj", "{1D317EC2-F4B1-4EED-9687-A008CA268B7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximizingXorProblem", "MaximizingXorProblem\MaximizingXorProblem.csproj", "{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -699,6 +701,10 @@ Global
 		{1D317EC2-F4B1-4EED-9687-A008CA268B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D317EC2-F4B1-4EED-9687-A008CA268B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D317EC2-F4B1-4EED-9687-A008CA268B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
