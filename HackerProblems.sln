@@ -239,6 +239,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumVersusXorProblem", "SumV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximizingXorProblem", "MaximizingXorProblem\MaximizingXorProblem.csproj", "{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowerBreakersProblem", "TowerBreakersProblem\TowerBreakersProblem.csproj", "{34F36C93-A381-4362-ABDD-26D8CB8D18BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -705,6 +707,10 @@ Global
 		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F36C93-A381-4362-ABDD-26D8CB8D18BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F36C93-A381-4362-ABDD-26D8CB8D18BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F36C93-A381-4362-ABDD-26D8CB8D18BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F36C93-A381-4362-ABDD-26D8CB8D18BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
