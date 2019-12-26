@@ -243,6 +243,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowerBreakersProblem", "Tow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCreamParlorProblem", "IceCreamParlorProblem\IceCreamParlorProblem.csproj", "{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManasaAndStonesProblem", "ManasaAndStonesProblem\ManasaAndStonesProblem.csproj", "{8636E061-DCAF-478A-9440-4A78FF74D575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -717,6 +719,10 @@ Global
 		{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8636E061-DCAF-478A-9440-4A78FF74D575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8636E061-DCAF-478A-9440-4A78FF74D575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8636E061-DCAF-478A-9440-4A78FF74D575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8636E061-DCAF-478A-9440-4A78FF74D575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
