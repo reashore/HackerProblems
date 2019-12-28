@@ -54,21 +54,18 @@ namespace Common
             }
 
             Console.Write("]");
-            Console.WriteLine();
         }
 
         public static void Print(IEnumerable<string> array)
         {
             string line = string.Join(", ", array);
             Console.WriteLine(line);
-            Console.WriteLine();
         }
 
         public static void Print2(IEnumerable<int> array)
         {
             string line = string.Join(", ", array);
             Console.WriteLine(line);
-            Console.WriteLine();
         }
 
         public static string Sort(string inputString)
