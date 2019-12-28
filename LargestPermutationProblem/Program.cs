@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LargestPermutationProblem
 {
@@ -13,18 +12,28 @@ namespace LargestPermutationProblem
             int[] largestPermutation;
 
             numberSwaps = 1;
+            array = new[] { 4, 2, 3, 5, 1 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 2 3 4 1
+            Print(largestPermutation);
+
+            numberSwaps = 2;
+            array = new[] { 4, 2, 3, 5, 1 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 4 3 2 1
+            Print(largestPermutation);
+
+            numberSwaps = 3;
             array = new[] {4, 2, 3, 5, 1};
-            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 2 3 4 1
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 4 3 2 1
             Print(largestPermutation);
 
             numberSwaps = 1;
-            array = new[] {2, 1, 3};
-            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 2 3 4 1
+            array = new[] { 2, 1, 3 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 3 1 2
             Print(largestPermutation);
 
             numberSwaps = 1;
-            array = new[] {2, 1};
-            largestPermutation = LargestPermutation(numberSwaps, array);              // 2 1 (no swaps)
+            array = new[] { 2, 1 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 2 1
             Print(largestPermutation);
         }
 
@@ -36,70 +45,80 @@ namespace LargestPermutationProblem
 
         private static int[] LargestPermutation(int numberSwaps, int[] array)
         {
-            GetMinAndMax(array, out int min, out int max);
-            Dictionary<int, int> occuranceDictionary = GetIndexes(array);
-            int currentMax = max;
-            int currentIndex = 0;
+            int arrayLen = array.Length;
+            const int minValue = 1;
+            int maxValue = arrayLen;
+            Dictionary<int, int> indicesDictionary = GetIndexes(array);
+            int currentValue = maxValue;
+            int leftIndex = 0;
 
             for (int n = 1; n <= numberSwaps; n++)
             {
+                int currentIndex = indicesDictionary[currentValue];
+                int leftValue = array[leftIndex];
 
+                if (leftValue == currentValue)
+                {
+                    continue;
+                }
+
+                Swap(leftIndex, currentIndex, array);
+                indicesDictionary[leftValue] = currentIndex;
+                currentValue--;
+
+                if (currentValue < minValue)
+                {
+                    break;
+                }
+
+                leftIndex++;
+
+                if (leftIndex == arrayLen - 1)
+                {
+                    break;
+                }
             }
-
-
-
-            // values must be consecutive
-            // get occurance count (maps value -> index)
-            // how to update occurance count after swap?
-
-            // find largest integer in array
-            // swap to left-most position
 
             return array;
         }
 
-        private static void GetMinAndMax(int[] array, out int min, out int max)
+        //private static void GetMinAndMax(int[] array, out int minValue, out int maxValue)
+        //{
+        //    maxValue = int.MinValue;
+        //    minValue = int.MaxValue;
+
+        //    foreach (int value in array)
+        //    {
+        //        if (value > maxValue)
+        //        {
+        //            maxValue = value;
+        //        }
+
+        //        if (value < minValue)
+        //        {
+        //            minValue = value;
+        //        }
+        //    }
+        //}
+
+        private static void Swap(int leftIndex, int rightIndex, int[] array)
         {
-            max = int.MinValue;
-            min = int.MaxValue;
-
-            foreach (int element in array)
-            {
-                if (element > max)
-                {
-                    max = element;
-                }
-
-                if (element < min)
-                {
-                    min = element;
-                }
-            }
-        }
-
-        private static void Swap(int highIndex, int lowIndex, int[] array)
-        {
-
+            int temp = array[leftIndex];
+            array[leftIndex] = array[rightIndex];
+            array[rightIndex] = temp;
         }
 
         private static Dictionary<int, int> GetIndexes(int[] array)
         {
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
 
-            foreach (int element in array)
+            for (int index = 0; index < array.Length; index++)
             {
-                if (!dictionary.ContainsKey(element))
-                {
-                    dictionary[element] = 1;
-                }
-                else
-                {
-                    dictionary[element]++;
-                }
+                int value = array[index];
+                dictionary[value] = index;
             }
 
             return dictionary;
         }
-
     }
 }
