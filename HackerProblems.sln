@@ -229,21 +229,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Techniques", "Techniques", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumPerimeterTriangleProblem", "MaximumPerimeterTriangleProblem\MaximumPerimeterTriangleProblem.csproj", "{6765AF2E-CB03-4DCC-9214-C901CC393F85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulPairsProblem", "BeautifulPairsProblem\BeautifulPairsProblem.csproj", "{C959764D-2591-4CDB-B86F-261D041B741B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautifulPairsProblem", "BeautifulPairsProblem\BeautifulPairsProblem.csproj", "{C959764D-2591-4CDB-B86F-261D041B741B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LonelyIntegerProblem", "LonelyIntegerProblem\LonelyIntegerProblem.csproj", "{6081D696-94F3-40D2-8B2C-15B5C1F91B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LonelyIntegerProblem", "LonelyIntegerProblem\LonelyIntegerProblem.csproj", "{6081D696-94F3-40D2-8B2C-15B5C1F91B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlippingBitsProblem", "FlippingBitsProblem\FlippingBitsProblem.csproj", "{257E6F84-FBA5-4888-ACCE-57BF127088C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlippingBitsProblem", "FlippingBitsProblem\FlippingBitsProblem.csproj", "{257E6F84-FBA5-4888-ACCE-57BF127088C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumVersusXorProblem", "SumVersusXorProblem\SumVersusXorProblem.csproj", "{1D317EC2-F4B1-4EED-9687-A008CA268B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumVersusXorProblem", "SumVersusXorProblem\SumVersusXorProblem.csproj", "{1D317EC2-F4B1-4EED-9687-A008CA268B7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximizingXorProblem", "MaximizingXorProblem\MaximizingXorProblem.csproj", "{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximizingXorProblem", "MaximizingXorProblem\MaximizingXorProblem.csproj", "{0D08CF89-6E15-4B19-823A-4CFB6DF1C280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowerBreakersProblem", "TowerBreakersProblem\TowerBreakersProblem.csproj", "{34F36C93-A381-4362-ABDD-26D8CB8D18BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TowerBreakersProblem", "TowerBreakersProblem\TowerBreakersProblem.csproj", "{34F36C93-A381-4362-ABDD-26D8CB8D18BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCreamParlorProblem", "IceCreamParlorProblem\IceCreamParlorProblem.csproj", "{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceCreamParlorProblem", "IceCreamParlorProblem\IceCreamParlorProblem.csproj", "{E694A031-EEB6-44BB-BD9A-ED8AA22AA05F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManasaAndStonesProblem", "ManasaAndStonesProblem\ManasaAndStonesProblem.csproj", "{8636E061-DCAF-478A-9440-4A78FF74D575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManasaAndStonesProblem", "ManasaAndStonesProblem\ManasaAndStonesProblem.csproj", "{8636E061-DCAF-478A-9440-4A78FF74D575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindThe PointProblem", "FindThe PointProblem\FindThe PointProblem.csproj", "{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppendAndDeleteProblem", "AppendAndDeleteProblem\AppendAndDeleteProblem.csproj", "{8B2B59EA-14F9-4032-B143-E8B1414F29EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -723,6 +727,14 @@ Global
 		{8636E061-DCAF-478A-9440-4A78FF74D575}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8636E061-DCAF-478A-9440-4A78FF74D575}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8636E061-DCAF-478A-9440-4A78FF74D575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2B59EA-14F9-4032-B143-E8B1414F29EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2B59EA-14F9-4032-B143-E8B1414F29EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2B59EA-14F9-4032-B143-E8B1414F29EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2B59EA-14F9-4032-B143-E8B1414F29EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
