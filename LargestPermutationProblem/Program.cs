@@ -12,6 +12,11 @@ namespace LargestPermutationProblem
             int[] largestPermutation;
 
             numberSwaps = 1;
+            array = new[] { 5, 4, 3, 1, 2 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 5 4 3 2 1
+            Print(largestPermutation);
+
+            numberSwaps = 1;
             array = new[] { 4, 2, 3, 5, 1 };
             largestPermutation = LargestPermutation(numberSwaps, array);              // 5 2 3 4 1
             Print(largestPermutation);
@@ -22,7 +27,7 @@ namespace LargestPermutationProblem
             Print(largestPermutation);
 
             numberSwaps = 3;
-            array = new[] {4, 2, 3, 5, 1};
+            array = new[] { 4, 2, 3, 5, 1 };
             largestPermutation = LargestPermutation(numberSwaps, array);              // 5 4 3 2 1
             Print(largestPermutation);
 
@@ -35,6 +40,11 @@ namespace LargestPermutationProblem
             array = new[] { 2, 1 };
             largestPermutation = LargestPermutation(numberSwaps, array);              // 2 1
             Print(largestPermutation);
+
+            numberSwaps = 1;
+            array = new[] { 1 };
+            largestPermutation = LargestPermutation(numberSwaps, array);              // 1
+            Print(largestPermutation);
         }
 
         private static void Print(IEnumerable<int> array)
@@ -43,37 +53,54 @@ namespace LargestPermutationProblem
             Console.WriteLine(line);
         }
 
-        private static int[] LargestPermutation(int numberSwaps, int[] array)
+        private static int[] LargestPermutation(int totalNumberSwaps, int[] array)
         {
             int arrayLen = array.Length;
             const int minValue = 1;
             int maxValue = arrayLen;
-            Dictionary<int, int> indicesDictionary = GetIndexes(array);
-            int currentValue = maxValue;
+            Dictionary<int, int> indexDictionary = GetIndexes(array);
+            int rightValue = maxValue;
             int leftIndex = 0;
+            int numberSwaps = 0;
 
-            for (int n = 1; n <= numberSwaps; n++)
+            while (true)
             {
-                int currentIndex = indicesDictionary[currentValue];
-                int leftValue = array[leftIndex];
+                bool condition1;
+                bool condition2;
+                int rightIndex = indexDictionary[rightValue];
 
-                if (leftValue == currentValue)
+                if (leftIndex == rightIndex)
                 {
+                    rightValue--;
+                    leftIndex++;
+                    condition1 = rightValue < minValue;
+                    condition2 = leftIndex == arrayLen - 1;
+
+                    if (condition1 || condition2)
+                    {
+                        break;
+                    }
+
                     continue;
                 }
 
-                Swap(leftIndex, currentIndex, array);
-                indicesDictionary[leftValue] = currentIndex;
-                currentValue--;
+                int leftValue = array[leftIndex];
+                Swap(leftIndex, rightIndex, array);
+                numberSwaps++;
 
-                if (currentValue < minValue)
+                if (numberSwaps == totalNumberSwaps)
                 {
                     break;
                 }
 
-                leftIndex++;
+                indexDictionary[leftValue] = rightIndex;
 
-                if (leftIndex == arrayLen - 1)
+                rightValue--;
+                leftIndex++;
+                condition1 = rightValue < minValue;
+                condition2 = leftIndex == arrayLen - 1;
+
+                if (condition1 || condition2)
                 {
                     break;
                 }
@@ -81,25 +108,6 @@ namespace LargestPermutationProblem
 
             return array;
         }
-
-        //private static void GetMinAndMax(int[] array, out int minValue, out int maxValue)
-        //{
-        //    maxValue = int.MinValue;
-        //    minValue = int.MaxValue;
-
-        //    foreach (int value in array)
-        //    {
-        //        if (value > maxValue)
-        //        {
-        //            maxValue = value;
-        //        }
-
-        //        if (value < minValue)
-        //        {
-        //            minValue = value;
-        //        }
-        //    }
-        //}
 
         private static void Swap(int leftIndex, int rightIndex, int[] array)
         {
