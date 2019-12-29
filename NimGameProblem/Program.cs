@@ -6,20 +6,19 @@ namespace NimGameProblem
     {
         internal static void Main()
         {
-            int[] pile;
-            string result;
-
-            pile = new[] {1, 1};
-            result = NimGame(pile);                  // Second
+            int[] pile = new[] {1, 1};
+            string result = NimGame(pile);                  // Second
             Console.WriteLine($"result = {result}");
 
             pile = new[] {2, 1, 4};
-            result = NimGame(pile);                  // First
+            result = NimGame(pile);                         // First
             Console.WriteLine($"result = {result}");
         }
 
         private static string NimGame(int[] pile)
         {
+            // https://math.stackexchange.com/questions/416042/why-xor-operator-works
+
             int result = pile[0];
 
             for (int n = 1; n < pile.Length; n++)
