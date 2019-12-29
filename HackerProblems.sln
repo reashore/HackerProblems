@@ -255,6 +255,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPermutationProblem",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckBalanceProblem", "LuckBalanceProblem\LuckBalanceProblem.csproj", "{687FBA11-3878-4171-BABB-DCC186B50653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringConstructionProblem", "StringConstructionProblem\StringConstructionProblem.csproj", "{6B9F28F5-97F4-424F-9C0D-25D275C48313}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -753,6 +755,10 @@ Global
 		{687FBA11-3878-4171-BABB-DCC186B50653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{687FBA11-3878-4171-BABB-DCC186B50653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{687FBA11-3878-4171-BABB-DCC186B50653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9F28F5-97F4-424F-9C0D-25D275C48313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9F28F5-97F4-424F-9C0D-25D275C48313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9F28F5-97F4-424F-9C0D-25D275C48313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9F28F5-97F4-424F-9C0D-25D275C48313}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
