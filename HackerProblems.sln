@@ -245,21 +245,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceCreamParlorProblem", "Ic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManasaAndStonesProblem", "ManasaAndStonesProblem\ManasaAndStonesProblem.csproj", "{8636E061-DCAF-478A-9440-4A78FF74D575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindThe PointProblem", "FindThe PointProblem\FindThe PointProblem.csproj", "{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindThe PointProblem", "FindThe PointProblem\FindThe PointProblem.csproj", "{D2BBC4FC-8C98-4B6D-A76F-043FA2952984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppendAndDeleteProblem", "AppendAndDeleteProblem\AppendAndDeleteProblem.csproj", "{8B2B59EA-14F9-4032-B143-E8B1414F29EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppendAndDeleteProblem", "AppendAndDeleteProblem\AppendAndDeleteProblem.csproj", "{8B2B59EA-14F9-4032-B143-E8B1414F29EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonDivisbleSubsetProblem", "NonDivisbleSubsetProblem\NonDivisbleSubsetProblem.csproj", "{2A0AD727-F761-45B6-9099-1F728BA1678F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonDivisbleSubsetProblem", "NonDivisbleSubsetProblem\NonDivisbleSubsetProblem.csproj", "{2A0AD727-F761-45B6-9099-1F728BA1678F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPermutationProblem", "LargestPermutationProblem\LargestPermutationProblem.csproj", "{6BD43B0B-7EA7-467E-AB68-2432EB4A3470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargestPermutationProblem", "LargestPermutationProblem\LargestPermutationProblem.csproj", "{6BD43B0B-7EA7-467E-AB68-2432EB4A3470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckBalanceProblem", "LuckBalanceProblem\LuckBalanceProblem.csproj", "{687FBA11-3878-4171-BABB-DCC186B50653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckBalanceProblem", "LuckBalanceProblem\LuckBalanceProblem.csproj", "{687FBA11-3878-4171-BABB-DCC186B50653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringConstructionProblem", "StringConstructionProblem\StringConstructionProblem.csproj", "{6B9F28F5-97F4-424F-9C0D-25D275C48313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringConstructionProblem", "StringConstructionProblem\StringConstructionProblem.csproj", "{6B9F28F5-97F4-424F-9C0D-25D275C48313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimGameProblem", "NimGameProblem\NimGameProblem.csproj", "{4FEE9D17-CE69-4C5C-884A-261C2A8A7295}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimGameProblem", "NimGameProblem\NimGameProblem.csproj", "{4FEE9D17-CE69-4C5C-884A-261C2A8A7295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriyankaAndToysProblem", "PriyankaAndToysProblem\PriyankaAndToysProblem.csproj", "{C2AB6300-37C4-4669-9CA8-57E870E05962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriyankaAndToysProblem", "PriyankaAndToysProblem\PriyankaAndToysProblem.csproj", "{C2AB6300-37C4-4669-9CA8-57E870E05962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueAsTwoStacksProblem", "QueueAsTwoStacksProblem\QueueAsTwoStacksProblem.csproj", "{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -771,6 +773,10 @@ Global
 		{C2AB6300-37C4-4669-9CA8-57E870E05962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2AB6300-37C4-4669-9CA8-57E870E05962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2AB6300-37C4-4669-9CA8-57E870E05962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
