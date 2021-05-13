@@ -1,5 +1,4 @@
-﻿using System;
-using System.Numerics;
+﻿using static System.Console;
 
 namespace SummingTheSeriesProblem
 {
@@ -7,32 +6,94 @@ namespace SummingTheSeriesProblem
     {
         internal static void Main()
         {
-            //const long MaxValue = 9223372036854775807;
-
             long n = 2;
             int result = SummingSeries(n);                  // 4
-            Console.WriteLine($"result = {result}");
+            WriteLine($"result = {result}");
 
             n = 1;
             result = SummingSeries(n);                      // 1
-            Console.WriteLine($"result = {result}");
+            WriteLine($"result = {result}");
 
-            //-------------------------------------------------------------
+            Test1();
+            Test2();
+            Test3();
+        }
 
-            long[] array =
+        private static int SummingSeries(long n)
+        {
+            // (a * b) % c = ((a % c) * (b % c)) % c
+            const ulong modulo = 1_000_000_007;
+            ulong result = (ulong)n % modulo;
+            result *= result;
+            result %= modulo;
+            return (int)result;
+        }
+
+        private static void CheckTestResult(int expected, int actual)
+        {
+            var message = actual == expected ? "Passed" : $"Expected = {expected}, Actual = {actual}";
+            WriteLine(message);
+        }
+
+        private static void Test1()
+        {
+            // Arrange
+            long[] array = new long[]
             {
-                229137999, 
-                344936985, 
-                681519110, 
-                494844394, 
-                767088309, 
-                307062702, 
-                306074554, 
-                555026606, 
-                4762607, 
+                5351871996120528,
+                2248813659738258,
+                2494359640703601,
+                6044763399160734,
+                3271269997212342,
+                4276346434761561,
+                2372239019637533,
+                5624204919070546,
+                9493965694520825,
+                8629828692375133
+            };
+            int[] expected = new int[]
+            {
+                578351320,
+                404664464,
+                20752136,
+                999516029,
+                743537718,
+                323730244,
+                174995256,
+                593331567,
+                136582381,
+                305527433,
+            };
+
+            WriteLine();
+
+            for (int m = 0; m < array.Length; m++)
+            {
+                // Act
+                int actual = SummingSeries(array[m]);
+
+                // Assert
+                CheckTestResult(expected[m], actual);
+            }
+        }
+
+        private static void Test2()
+        {
+            // Arrange
+            long[] array = new long[]
+            {
+                229137999,
+                344936985,
+                681519110,
+                494844394,
+                767088309,
+                307062702,
+                306074554,
+                555026606,
+                4762607,
                 231677104
             };
-            long[] expected =
+            int[] expected = new[]
             {
                 218194447,
                 788019571,
@@ -46,19 +107,22 @@ namespace SummingTheSeriesProblem
                 142106856
             };
 
+            WriteLine();
+
             for (int m = 0; m < array.Length; m++)
             {
-                long value = SummingSeries(array[m]);
+                // Act
+                int actual = SummingSeries(array[m]);
 
-                if (value == expected[m])
-                {
-                    Console.WriteLine($"Passed {m}");
-                }
+                //Assert
+                CheckTestResult(expected[m], actual);
             }
+        }
 
-            //-------------------------------------------------------------
-
-            array = new long[]
+        private static void Test3()
+        {
+            // Arrange
+            long[] array = new long[]
             {
                 23918572,
                 697437974,
@@ -71,7 +135,7 @@ namespace SummingTheSeriesProblem
                 786555238,
                 30180035
             };
-            expected = new long[]
+            int[] expected = new[]
             {
                 82514498,
                 172286608,
@@ -85,49 +149,16 @@ namespace SummingTheSeriesProblem
                 506225387
             };
 
+            WriteLine();
+
             for (int m = 0; m < array.Length; m++)
             {
-                long value = SummingSeries(array[m]);
+                // Act
+                int actual = SummingSeries(array[m]);
 
-                if (value == expected[m])
-                {
-                    Console.WriteLine($"Passed {m}");
-                }
+                // Assert
+                CheckTestResult(expected[m], actual);
             }
-        }
-
-        private static int SummingSeries(long n)
-        {
-            BigInteger bigN = n;
-            BigInteger bigFactor = 1_000_000_007;
-
-            BigInteger result = bigN * bigN;
-            result %= bigFactor;
-
-            return (int) result;
-        }
-
-        private static int SummingSeries3(long n)
-        {
-            const long factor = 1_000_000_007;
-            long result = n * n % factor;
-
-            return (int) result;
-        }
-
-        private static int SummingSeries2(long n)
-        {
-            long sum = 0;
-
-            for (int i = 1; i <= n; i++)
-            {
-                sum += 2 * i - 1;
-            }
-
-            const long factor = 1_000_000_007;
-            long result = sum % factor;
-
-            return (int) result;
         }
     }
 }

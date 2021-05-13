@@ -171,39 +171,39 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BonAppetitProblem", "BonApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChocolateFeastProblem", "ChocolateFeastProblem\ChocolateFeastProblem.csproj", "{B624A586-7C43-469E-B2F1-ADCD6E9AA7AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLaneProblem", "ServiceLaneProblem\ServiceLaneProblem.csproj", "{C0B48FEC-0C1D-40A3-BE5F-3935BF06EE25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLaneProblem", "ServiceLaneProblem\ServiceLaneProblem.csproj", "{C0B48FEC-0C1D-40A3-BE5F-3935BF06EE25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamelCaseProblem", "CamelCaseProblem\CamelCaseProblem.csproj", "{91EE26A7-2DCD-49E7-88B0-5F82EBAF683D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CamelCaseProblem", "CamelCaseProblem\CamelCaseProblem.csproj", "{91EE26A7-2DCD-49E7-88B0-5F82EBAF683D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSortPart1Problem", "InsertionSortPart1Problem\InsertionSortPart1Problem.csproj", "{C3C328AE-5D3B-40EF-9300-35D0C1762DC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSortPart1Problem", "InsertionSortPart1Problem\InsertionSortPart1Problem.csproj", "{C3C328AE-5D3B-40EF-9300-35D0C1762DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongPasswordProblem", "StrongPasswordProblem\StrongPasswordProblem.csproj", "{44BD68D4-0E72-4E49-A496-6CEF37C71A26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrongPasswordProblem", "StrongPasswordProblem\StrongPasswordProblem.csproj", "{44BD68D4-0E72-4E49-A496-6CEF37C71A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoCharactersProblem", "TwoCharactersProblem\TwoCharactersProblem.csproj", "{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoCharactersProblem", "TwoCharactersProblem\TwoCharactersProblem.csproj", "{F758CD1A-AC77-4B0A-8B17-721ABBC1CAC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViralAdvertisingProblem", "ViralAdvertisingProblem\ViralAdvertisingProblem.csproj", "{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViralAdvertisingProblem", "ViralAdvertisingProblem\ViralAdvertisingProblem.csproj", "{DB58AC88-CEDD-4560-AD1E-C9683D5BC26E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveThePrisonerProblem", "SaveThePrisonerProblem\SaveThePrisonerProblem.csproj", "{26654C77-6CF2-4391-8967-7B270AF17540}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveThePrisonerProblem", "SaveThePrisonerProblem\SaveThePrisonerProblem.csproj", "{26654C77-6CF2-4391-8967-7B270AF17540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCipherProblem", "CaesarCipherProblem\CaesarCipherProblem.csproj", "{70C16789-1E97-415C-A2AD-E00DA4258167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaesarCipherProblem", "CaesarCipherProblem\CaesarCipherProblem.csproj", "{70C16789-1E97-415C-A2AD-E00DA4258167}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerRankStringProblem", "HackerRankStringProblem\HackerRankStringProblem.csproj", "{3D53DAE2-9106-4D17-9A9B-7EE1BE43A353}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalancedBracketsProblem", "BalancedBracketsProblem\BalancedBracketsProblem.csproj", "{C02E6EBB-5719-41F7-9E8E-5963D42B71C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedUniformStringsProblem", "WeightedUniformStringsProblem\WeightedUniformStringsProblem.csproj", "{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightedUniformStringsProblem", "WeightedUniformStringsProblem\WeightedUniformStringsProblem.csproj", "{6AF2DA5E-46D6-4A40-8C81-0C3A323C1176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsExplorationProblem", "MarsExplorationProblem\MarsExplorationProblem.csproj", "{372D073D-060B-4D9A-91A4-8442676E2996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsExplorationProblem", "MarsExplorationProblem\MarsExplorationProblem.csproj", "{372D073D-060B-4D9A-91A4-8442676E2996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LisasWorkbookProblem", "LisasWorkbookProblem\LisasWorkbookProblem.csproj", "{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LisasWorkbookProblem", "LisasWorkbookProblem\LisasWorkbookProblem.csproj", "{50C692C3-92AC-4B0C-9EE7-BD27DCC56921}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{18303237-6716-4867-ADFD-06F71C46DB8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PangramsProblem", "PangramsProblem\PangramsProblem.csproj", "{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PangramsProblem", "PangramsProblem\PangramsProblem.csproj", "{29250DB2-2F0B-4E31-AAFA-9AB8DB20D9FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramProblem", "AnagramProblem\AnagramProblem.csproj", "{B31DDAB8-684E-4994-8644-22B832F9ECDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnagramProblem", "AnagramProblem\AnagramProblem.csproj", "{B31DDAB8-684E-4994-8644-22B832F9ECDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunnyStringProblem", "FunnyStringProblem\FunnyStringProblem.csproj", "{5E173202-EA07-41AF-934E-9799744EEB71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunnyStringProblem", "FunnyStringProblem\FunnyStringProblem.csproj", "{5E173202-EA07-41AF-934E-9799744EEB71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GemstonesProblem", "GemstonesProblem\GemstonesProblem.csproj", "{5F04BFDB-9407-426F-946A-912C1D29DEEB}"
 EndProject
@@ -261,7 +261,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimGameProblem", "NimGamePr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriyankaAndToysProblem", "PriyankaAndToysProblem\PriyankaAndToysProblem.csproj", "{C2AB6300-37C4-4669-9CA8-57E870E05962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueAsTwoStacksProblem", "QueueAsTwoStacksProblem\QueueAsTwoStacksProblem.csproj", "{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueAsTwoStacksProblem", "QueueAsTwoStacksProblem\QueueAsTwoStacksProblem.csproj", "{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
