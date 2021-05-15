@@ -7,6 +7,22 @@ namespace Common
 {
     public static class Utilities
     {
+        public static List<int> GetPrimeFactors(int number)
+        {
+            List<int> primeFactors = new List<int>();
+
+            for (int divisor = 2; divisor <= number; divisor++)
+            {
+                while (number % divisor == 0)
+                {
+                    primeFactors.Add(divisor);
+                    number = number / divisor;
+                }
+            }
+
+            return primeFactors;
+        }
+
         public static string Reverse(string s)
         {
             StringBuilder stringBuilder = new StringBuilder();
