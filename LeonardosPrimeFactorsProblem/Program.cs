@@ -3,6 +3,7 @@ using static System.Console;
 
 namespace LeonardosPrimeFactorsProblem
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     internal class Program
     {
         internal static void Main()
@@ -25,47 +26,91 @@ namespace LeonardosPrimeFactorsProblem
             }
         }
 
+        #region Fast solution
+
         private static int PrimeCount(long number)
         {
-            int maximumPrimeFactors = 0;
-
-            for (int n = 2; n <= number; n++)
-            {
-                int numberPrimeFactors = GetPrimeFactorsCount(n);
-
-                if (numberPrimeFactors > maximumPrimeFactors)
-                {
-                    maximumPrimeFactors = numberPrimeFactors;
-                    WriteLine($"n = {n}, maximumPrimeFactors = {maximumPrimeFactors}");
-                }
-            }
-
-            return maximumPrimeFactors;
-        }
-
-        private static int GetPrimeFactorsCount(long number)
-        {
-            if (number == 1)
+            if (number < 2)
             {
                 return 0;
             }
 
-            List<int> primeFactors = new List<int>();
+            ulong product = 2;
+            ulong prime;
+            int count = 1;
 
-            for (int divisor = 2; divisor <= number; divisor++)
+            for (prime = 3; product * prime <= (ulong)number; prime += 2)
             {
-                while (number % divisor == 0)
+                if (Gcd(product, prime) == 1)
                 {
-                    if (!primeFactors.Contains(divisor))
-                    {
-                        primeFactors.Add(divisor);
-                    }
-
-                    number /= divisor;
+                    product *= prime;
+                    count++;
                 }
             }
 
-            return primeFactors.Count;
+            return count;
         }
+
+        private static ulong Gcd(ulong n1, ulong n2)
+        {
+            while (n2 > 0)
+            {
+                ulong temp = n2;
+
+                n2 = n1 % n2;
+                n1 = temp;
+            }
+
+            return n1;
+        }
+
+        #endregion
+
+        #region Slow Solution
+
+        //private static int PrimeCountSlow(long number)
+        //{
+        //    int maximumPrimeFactors = 0;
+
+        //    for (int n = 2; n <= number; n++)
+        //    {
+        //        int numberPrimeFactors = GetPrimeFactorsCount(n);
+
+        //        if (numberPrimeFactors > maximumPrimeFactors)
+        //        {
+        //            maximumPrimeFactors = numberPrimeFactors;
+        //            WriteLine($"n = {n}, maximumPrimeFactors = {maximumPrimeFactors}");
+        //        }
+        //    }
+
+        //    return maximumPrimeFactors;
+        //}
+
+        //private static int GetPrimeFactorsCount(long number)
+        //{
+        //    if (number == 1)
+        //    {
+        //        return 0;
+        //    }
+
+        //    List<int> primeFactors = new();
+
+        //    for (int divisor = 2; divisor <= number; divisor++)
+        //    {
+        //        while (number % divisor == 0)
+        //        {
+        //            if (!primeFactors.Contains(divisor))
+        //            {
+        //                primeFactors.Add(divisor);
+        //            }
+
+        //            number /= divisor;
+        //        }
+        //    }
+
+        //    return primeFactors.Count;
+        //}
+
+        #endregion
     }
 }
