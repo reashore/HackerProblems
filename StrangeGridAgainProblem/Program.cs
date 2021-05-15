@@ -7,9 +7,10 @@ namespace StrangeGridAgainProblem
     {
         internal static void Main(string[] args)
         {
-            // maxInt = 2147483647
-            //          5000000058
-            //          4294967295
+            // maxInt  = 2147483647
+            // maxUInt = 4294967295
+            //           5000000058
+
             int row = 6;
             int col = 3;
             long value = StrangeGrid(row, col);
