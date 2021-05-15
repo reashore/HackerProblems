@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System;
+using static System.Console;
 
 namespace SummingTheSeriesProblem
 {
@@ -17,29 +18,65 @@ namespace SummingTheSeriesProblem
             Test1();
             Test2();
             Test3();
+            Test4();
         }
+
+        //private static int SummingSeries(long n)
+        //{
+        //    long result = 0;
+
+        //    try
+        //    {
+        //        // (a * b) % c = ((a % c) * (b % c)) % c
+        //        const long modulo = 1_000_000_007;
+        //        result = n % modulo;
+        //        result *= result;
+        //        result %= modulo;
+        //    }
+        //    catch (Exception exception)
+        //    {
+        //        WriteLine("Exception");
+        //    }
+
+        //    return (int)result;
+        //}
 
         private static int SummingSeries(long n)
         {
-            // (a * b) % c = ((a % c) * (b % c)) % c
-            const ulong modulo = 1_000_000_007;
-            ulong result = (ulong)n % modulo;
-            result *= result;
-            result %= modulo;
-            return (int)result;
+            checked
+            {
+                // (a * b) % c = ((a % c) * (b % c)) % c
+                const long modulo = 1_000_000_007;
+                long result = n % modulo;
+                result *= result;
+                result %= modulo;
+                return (int)result;
+            }
         }
+
+        //private static int SummingSeries(long n)
+        //{
+        //    checked
+        //    {
+        //        // (a * b) % c = ((a % c) * (b % c)) % c
+        //        const ulong modulo = 1_000_000_007;
+        //        ulong result = ((ulong)n) % modulo;
+        //        result *= result;
+        //        result %= modulo;
+        //        return (int)result;
+        //    }
+        //}
 
         private static void CheckTestResult(int expected, int actual)
         {
-            var message = actual == expected ? "Passed" : $"Expected = {expected}, Actual = {actual}";
+            var message = actual == expected ? "Passed" : $"Failed: Expected = {expected}, Actual = {actual}";
             WriteLine(message);
         }
 
         private static void Test1()
         {
             // Arrange
-            long[] array = new long[]
-            {
+            long[] array = {
                 5351871996120528,
                 2248813659738258,
                 2494359640703601,
@@ -51,8 +88,7 @@ namespace SummingTheSeriesProblem
                 9493965694520825,
                 8629828692375133
             };
-            int[] expected = new int[]
-            {
+            int[] expected = {
                 578351320,
                 404664464,
                 20752136,
@@ -62,7 +98,7 @@ namespace SummingTheSeriesProblem
                 174995256,
                 593331567,
                 136582381,
-                305527433,
+                305527433
             };
 
             WriteLine();
@@ -80,8 +116,7 @@ namespace SummingTheSeriesProblem
         private static void Test2()
         {
             // Arrange
-            long[] array = new long[]
-            {
+            long[] array = {
                 229137999,
                 344936985,
                 681519110,
@@ -93,8 +128,7 @@ namespace SummingTheSeriesProblem
                 4762607,
                 231677104
             };
-            int[] expected = new[]
-            {
+            int[] expected = {
                 218194447,
                 788019571,
                 43914042,
@@ -122,8 +156,7 @@ namespace SummingTheSeriesProblem
         private static void Test3()
         {
             // Arrange
-            long[] array = new long[]
-            {
+            long[] array = {
                 23918572,
                 697437974,
                 605819664,
@@ -135,8 +168,7 @@ namespace SummingTheSeriesProblem
                 786555238,
                 30180035
             };
-            int[] expected = new[]
-            {
+            int[] expected = {
                 82514498,
                 172286608,
                 719950662,
@@ -147,6 +179,46 @@ namespace SummingTheSeriesProblem
                 22207157,
                 94552678,
                 506225387
+            };
+
+            WriteLine();
+
+            for (int m = 0; m < array.Length; m++)
+            {
+                // Act
+                int actual = SummingSeries(array[m]);
+
+                // Assert
+                CheckTestResult(expected[m], actual);
+            }
+        }
+
+        private static void Test4()
+        {
+            // Arrange
+            long[] array = {
+                5773408242017850,
+                5025554062339313,
+                9803332417649065,
+                4529826640896246,
+                7633499047094366,
+                4614556128541569,
+                8200111660324493,
+                9428242699249167,
+                3888311265122983,
+                2400440231598721
+            };
+            int[] expected = {
+                112242846,
+                224225402,
+                27866312,
+                696985755,
+                210094750,
+                364229804,
+                770629628,
+                249617754,
+                321706764,
+                69640712
             };
 
             WriteLine();
