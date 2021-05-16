@@ -269,6 +269,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrangeGridAgainProblem", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndDivisorsProblem", "SherlockAndDivisorsProblem\SherlockAndDivisorsProblem.csproj", "{37612D89-C315-4657-AECB-485FE49FFE7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloweenPartyProblem", "HalloweenPartyProblem\HalloweenPartyProblem.csproj", "{DA25D13B-AF0D-4CB5-9063-6E584101A24E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -795,6 +797,10 @@ Global
 		{37612D89-C315-4657-AECB-485FE49FFE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37612D89-C315-4657-AECB-485FE49FFE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37612D89-C315-4657-AECB-485FE49FFE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA25D13B-AF0D-4CB5-9063-6E584101A24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA25D13B-AF0D-4CB5-9063-6E584101A24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA25D13B-AF0D-4CB5-9063-6E584101A24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA25D13B-AF0D-4CB5-9063-6E584101A24E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

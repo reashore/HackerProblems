@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using static System.Console;
 
 namespace SherlockAndDivisorsProblem
@@ -22,6 +23,9 @@ namespace SherlockAndDivisorsProblem
 
             WriteLine();
             Test1();
+
+            number = 2352;
+            List<int> primeFactors = GetPrimeFactors(number);
         }
 
         private static int GetNumberDivisorsDivisibleByTwo(int number)
@@ -47,6 +51,35 @@ namespace SherlockAndDivisorsProblem
             }
 
             return count;
+        }
+
+        private static List<int> GetPrimeFactors(int number)
+        {
+            // https://www.thecsengineer.com/2020/11/efficient-algorithm-to-find-all-prime-factors-of-number.html
+
+            List<int> primeFactors = new List<int>();
+
+            while (number % 2 == 0)
+            {
+                primeFactors.Add(2);
+                number /= 2;
+            }
+
+            for (int n = 3; n <= Math.Sqrt(number); n += 2)
+            {
+                while (number % n == 0)
+                {
+                    primeFactors.Add(n);
+                    number /= n;
+                }
+            }
+
+            if (number > 1)
+            {
+                primeFactors.Add(number);
+            }
+
+            return primeFactors;
         }
 
         private static void Test1()

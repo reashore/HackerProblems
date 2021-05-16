@@ -7,17 +7,30 @@ namespace Common
 {
     public static class Utilities
     {
-        public static List<int> GetPrimeFactors(int number)
+        private static List<int> GetPrimeFactors(int number)
         {
+            // https://www.thecsengineer.com/2020/11/efficient-algorithm-to-find-all-prime-factors-of-number.html
+
             List<int> primeFactors = new List<int>();
 
-            for (int divisor = 2; divisor <= number; divisor++)
+            while (number % 2 == 0)
             {
-                while (number % divisor == 0)
+                primeFactors.Add(2);
+                number /= 2;
+            }
+
+            for (int n = 3; n <= Math.Sqrt(number); n += 2)
+            {
+                while (number % n == 0)
                 {
-                    primeFactors.Add(divisor);
-                    number = number / divisor;
+                    primeFactors.Add(n);
+                    number /= n;
                 }
+            }
+
+            if (number > 1)
+            {
+                primeFactors.Add(number);
             }
 
             return primeFactors;
