@@ -263,9 +263,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriyankaAndToysProblem", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueAsTwoStacksProblem", "QueueAsTwoStacksProblem\QueueAsTwoStacksProblem.csproj", "{5CCC09FB-F271-4EED-A0FD-5EB8E6738F1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeonardosPrimeFactorsProblem", "LeonardosPrimeFactorsProblem\LeonardosPrimeFactorsProblem.csproj", "{00B1DB0C-96C9-4291-8A61-E292C8D15DED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeonardosPrimeFactorsProblem", "LeonardosPrimeFactorsProblem\LeonardosPrimeFactorsProblem.csproj", "{00B1DB0C-96C9-4291-8A61-E292C8D15DED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrangeGridAgainProblem", "StrangeGridAgainProblem\StrangeGridAgainProblem.csproj", "{C1C8910A-0420-49F1-9151-27B7496D1D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrangeGridAgainProblem", "StrangeGridAgainProblem\StrangeGridAgainProblem.csproj", "{C1C8910A-0420-49F1-9151-27B7496D1D00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndDivisorsProblem", "SherlockAndDivisorsProblem\SherlockAndDivisorsProblem.csproj", "{37612D89-C315-4657-AECB-485FE49FFE7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -789,6 +791,10 @@ Global
 		{C1C8910A-0420-49F1-9151-27B7496D1D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1C8910A-0420-49F1-9151-27B7496D1D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1C8910A-0420-49F1-9151-27B7496D1D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37612D89-C315-4657-AECB-485FE49FFE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37612D89-C315-4657-AECB-485FE49FFE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37612D89-C315-4657-AECB-485FE49FFE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37612D89-C315-4657-AECB-485FE49FFE7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
