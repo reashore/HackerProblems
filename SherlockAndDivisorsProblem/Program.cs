@@ -35,7 +35,7 @@ namespace SherlockAndDivisorsProblem
 
             if (number % 2 == 0)
             {
-                count += 2;     // 2 and number are divisors
+                count += 2;
             }
 
             for (int divisor = 3; divisor <= number / 2; divisor++)
@@ -48,21 +48,6 @@ namespace SherlockAndDivisorsProblem
 
             return count;
         }
-
-        //private static int GetNumberDivisorsDivisibleByTwo(int number)
-        //{
-        //    int count = 0;     
-
-        //    for (int divisor = 2; divisor <= number; divisor++)
-        //    {
-        //        if (number % divisor == 0 && divisor % 2 == 0)
-        //        {
-        //            count++;
-        //        }
-        //    }
-
-        //    return count;
-        //}
 
         private static void Test1()
         {
