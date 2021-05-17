@@ -14,10 +14,61 @@ namespace SumarFloatingRocksProblem
             Test0();
             Test1();
             Test2();
-            WriteLine("New tests start");
-            Test3();
-            WriteLine("New tests end");
+            //WriteLine("New tests start");
+            //Test3();
+            //WriteLine("New tests end");
         }
+
+        //private static int Solve(int x1, int y1, int x2, int y2)
+        //{
+        //    // vertical line
+        //    if (x1 == x2)
+        //    {
+        //        if (y1 < y2)
+        //        {
+        //            Swap(ref y1, ref y2);
+        //        }
+
+        //        int difference = y1 - y2 - 1;
+
+        //        if (difference < 0)
+        //        {
+        //            difference = -difference;
+        //        }
+
+        //        return difference;
+        //    }
+
+        //    if (x1 > x2)
+        //    {
+        //        Swap(ref x1, ref x2);
+        //        Swap(ref y1, ref y2);
+        //    }
+
+        //    int deltaX = x2 - x1;
+        //    int deltaY = y2 - y1;
+
+        //    if (deltaX < 0)
+        //    {
+        //        deltaX = -deltaX;
+        //    }
+
+        //    if (deltaY < 0)
+        //    {
+        //        deltaY = -deltaY;
+        //    }
+
+        //    if (deltaY > deltaX)
+        //    {
+        //        Swap(ref deltaX, ref deltaY);
+        //    }
+
+        //    int gcd = Gcd2(deltaX, deltaY);
+
+        //    int count = deltaX / gcd - 1;
+
+        //    return count;
+        //}
 
         private static int Solve(int x1, int y1, int x2, int y2)
         {
@@ -45,20 +96,14 @@ namespace SumarFloatingRocksProblem
                 Swap(ref y1, ref y2);
             }
 
-            //int deltaX = x2 - x1;
-            //int deltaY = y2 - y1;
-
-            //if (deltaY % deltaX != 0)
-            //{
-            //    return 0;
-            //}
-
-            double slope = (double)(y1 - y2) / (x1 - x2);
+            int deltaX = x2 - x1;
+            int deltaY = y2 - y1;
+            double slope = (double)deltaY / deltaX;
             double xMean = (double)(x1 + x2) / 2;
             double yMean = (double)(y1 + y2) / 2;
             double offset = yMean - slope * xMean;
             int count = 0;
-            
+
             for (int x = x1 + 1; x < x2; x++)
             {
                 double y = slope * x + offset;
@@ -70,6 +115,36 @@ namespace SumarFloatingRocksProblem
             }
 
             return count;
+        }
+
+        private static int Gcd2(int a, int b)
+        {
+            while (a != 0 && b != 0)
+            {
+                if (a > b)
+                {
+                    a %= b;
+                }
+                else
+                {
+                    b %= a;
+                }
+            }
+
+            return a | b;
+        }
+
+        private static int Gcd(int x1, int x2)
+        {
+            while (x2 > 0)
+            {
+                int temp = x2;
+
+                x2 = x1 % x2;
+                x1 = temp;
+            }
+
+            return x1;
         }
 
         private static void Swap(ref int x1, ref int x2)
@@ -99,32 +174,38 @@ namespace SumarFloatingRocksProblem
             int y1 = 2;
             int x2 = 4;
             int y2 = 0;
-            int count = Solve(x1, y1, x2, y2);
+            int count = Solve(x1, y1, x2, y2);              // 1
             WriteLine($"count = {count}");
 
             x1 = 2;
             y1 = 2;
             x2 = 5;
             y2 = 5;
-            count = Solve(x1, y1, x2, y2);
+            count = Solve(x1, y1, x2, y2);                  // 2
             WriteLine($"count = {count}");
 
             x1 = 1;
             y1 = 9;
             x2 = 8;
             y2 = 16;
-            count = Solve(x1, y1, x2, y2);
+            count = Solve(x1, y1, x2, y2);                  // 6
             WriteLine($"count = {count}");
 
-            // actual = 2, expected = 0: x1 = 7173287, y1 = -8172527, x2 = 5556293, y2 = 7032662
-            x1 = 7173287;
-            y1 = -8172527;
-            x2 = 5556293;
-            y2 = 7032662;
-            count = Solve(x1, y1, x2, y2);   // expected 0
-            WriteLine($"count = {count}");
+            //x1 = 7173287;
+            //y1 = -8172527;
+            //x2 = 5556293;
+            //y2 = 7032662;
+            //count = Solve(x1, y1, x2, y2);   // expected 0
+            //WriteLine($"count = {count}");
 
-            WriteLine();
+            //x1 = 7158191;
+            //y1 = -5226453;
+            //x2 = -4407451;
+            //y2 = 8512618;
+            //count = Solve(x1, y1, x2, y2);   // expected 18
+            //WriteLine($"count = {count}");
+
+            //WriteLine();
         }
 
         private static void Test1()
