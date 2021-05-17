@@ -11,6 +11,12 @@ namespace SumarFloatingRocksProblem
     {
         internal static void Main()
         {
+            int lcm1 = Lcm(2, 4);
+            int lcm2 = Lcm(3, 9);
+
+            int gcf1 = Gcf(2, 4);
+            int gcf2 = Gcf(3, 9);
+
             Test0();
             Test1();
             Test2();
@@ -63,9 +69,9 @@ namespace SumarFloatingRocksProblem
         //        Swap(ref deltaX, ref deltaY);
         //    }
 
-        //    int gcd = Gcd2(deltaX, deltaY);
+        //    int gcf = Gcf(deltaX, deltaY);
 
-        //    int count = deltaX / gcd - 1;
+        //    int count = deltaX / gcf - 1;
 
         //    return count;
         //}
@@ -117,34 +123,20 @@ namespace SumarFloatingRocksProblem
             return count;
         }
 
-        private static int Gcd2(int a, int b)
+        private static int Gcf(int a, int b)
         {
-            while (a != 0 && b != 0)
+            while (b != 0)
             {
-                if (a > b)
-                {
-                    a %= b;
-                }
-                else
-                {
-                    b %= a;
-                }
+                int temp = b;
+                b = a % b;
+                a = temp;
             }
-
-            return a | b;
+            return a;
         }
 
-        private static int Gcd(int x1, int x2)
+        private static int Lcm(int a, int b)
         {
-            while (x2 > 0)
-            {
-                int temp = x2;
-
-                x2 = x1 % x2;
-                x1 = temp;
-            }
-
-            return x1;
+            return (a / Gcf(a, b)) * b;
         }
 
         private static void Swap(ref int x1, ref int x2)
