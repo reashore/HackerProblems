@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using static System.Console;
 
 namespace MostDistantProblem
@@ -29,6 +31,9 @@ namespace MostDistantProblem
             };
             maximumDistance = Solve(pointList);
             WriteLine($"maximumDistance = {maximumDistance}");          // 9.219544457293
+
+            Test1();                                                    // 1414208066.040572166443
+            Test2();                                                    // 1414208105.636744260788
         }
 
         private static double Solve(List<List<int>> points)
@@ -38,7 +43,6 @@ namespace MostDistantProblem
             int maxX = int.MinValue;
             int minY = int.MaxValue;
             int maxY = int.MinValue;
-            double maxDistance;
 
             foreach (Point point in pointList)
             {
@@ -79,7 +83,7 @@ namespace MostDistantProblem
 
             Point p1 = new Point(minX, 0);
             Point p2 = new Point(maxX, 0);
-            double distance = GetDistance2(p1, p2);
+            double distance = GetDistance(p1, p2);
 
             if (distance > maximumDistance)
             {
@@ -88,7 +92,27 @@ namespace MostDistantProblem
 
             p1 = new Point(0, minY);
             p2 = new Point(0, maxY);
-            distance = GetDistance2(p1, p2);
+            distance = GetDistance(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            //---------------------------------------------
+
+            p1 = new Point(minX, 0);
+            p2 = new Point(0, minY);
+            distance = GetDistance(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            p1 = new Point(maxX, 0);
+            p2 = new Point(0, minY);
+            distance = GetDistance(p1, p2);
 
             if (distance > maximumDistance)
             {
@@ -99,7 +123,7 @@ namespace MostDistantProblem
 
             p1 = new Point(minX, 0);
             p2 = new Point(0, maxY);
-            distance = GetDistance2(p1, p2);
+            distance = GetDistance(p1, p2);
 
             if (distance > maximumDistance)
             {
@@ -108,27 +132,7 @@ namespace MostDistantProblem
 
             p1 = new Point(maxX, 0);
             p2 = new Point(0, maxY);
-            distance = GetDistance2(p1, p2);
-
-            if (distance > maximumDistance)
-            {
-                maximumDistance = distance;
-            }
-
-            //---------------------------------------------
-
-            p1 = new Point(maxX, 0);
-            p2 = new Point(0, minY);
-            distance = GetDistance2(p1, p2);
-
-            if (distance > maximumDistance)
-            {
-                maximumDistance = distance;
-            }
-
-            p1 = new Point(maxX, 0);
-            p2 = new Point(0, maxY);
-            distance = GetDistance2(p1, p2);
+            distance = GetDistance(p1, p2);
 
             if (distance > maximumDistance)
             {
@@ -136,43 +140,6 @@ namespace MostDistantProblem
             }
 
             return maximumDistance;
-        }
-
-        #region solution 1
-
-        private static double Solve2(List<List<int>> points)
-        {
-            List<Point> pointList = ConvertToListOfPoints(points);
-            double maxDistance = 0;
-            Point maxPoint1 = new Point();
-            Point maxPoint2 = new Point();
-
-            for (int n1 = 0; n1 < pointList.Count; n1++)
-            {
-                for (int n2 = 0; n2 < pointList.Count; n2++)
-                {
-                    if (n1 == n2)
-                    {
-                        continue;
-                    }
-
-                    Point p1 = pointList[n1];
-                    Point p2 = pointList[n2];
-
-                    double distance = GetDistance1(p1, p2);
-
-                    if (distance > maxDistance)
-                    {
-                        maxDistance = distance;
-                        maxPoint1 = p1;
-                        maxPoint2 = p2;
-                    }
-                }
-            }
-
-            maxDistance = GetDistance2(maxPoint1, maxPoint2);
-            
-            return maxDistance;
         }
 
         private static List<Point> ConvertToListOfPoints(List<List<int>> points)
@@ -190,34 +157,93 @@ namespace MostDistantProblem
             return pointList;
         }
 
-        private static double GetDistance1(Point p1, Point p2)
+        private static double GetDistance(Point p1, Point p2)
         {
-            int x1 = p1.X;
-            int y1 = p1.Y;
-            int x2 = p2.X;
-            int y2 = p2.Y;
-
-            return Abs(x1 - x2) + Abs(y1 - y2);
+            long x1 = p1.X;
+            long y1 = p1.Y;
+            long x2 = p2.X;
+            long y2 = p2.Y;
+            double deltaX = x1 - x2;
+            double deltaY = y1 - y2;
+            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
         }
 
-        private static double GetDistance2(Point p1, Point p2)
-        {
-            int x1 = p1.X;
-            int y1 = p1.Y;
-            int x2 = p2.X;
-            int y2 = p2.Y;
+        #region Test code
 
-            return Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+        private static void Test1()
+        {
+            const string testDataFileName = @"./TestData1.txt";
+            const double expectedTestValue = 1414208066.040572166443;
+
+            Test(testDataFileName, expectedTestValue);
         }
 
-        private static int Abs(int x)
+        private static void Test2()
         {
-            if (x > 0)
+            const string testDataFileName = @"./TestData2.txt";
+            const double expectedTestValue = 1414208105.636744260788;
+
+            Test(testDataFileName, expectedTestValue);
+        }
+
+        private static void Test(string testDataFileName, double expected)
+        {
+            string[] lines = GetTestData(testDataFileName);
+            List<List<int>> pointList = new();
+
+            foreach (var line in lines)
             {
-                return x;
+                string[] values = line.Split(" ");
+
+                int.TryParse(values[0], out int x);
+                int.TryParse(values[1], out int y);
+                List<int> coordinatesList = new()
+                {
+                    x, y
+                };
+
+                pointList.Add(coordinatesList);
             }
 
-            return -x;
+            double actual = Solve(pointList);
+
+            if (!IsEqual(actual, expected))
+            {
+                WriteLine($"Failed: actual = {actual}, expected = {expected}");
+            }
+            else
+            {
+                WriteLine("Passed");
+            }
+        }
+
+        private static bool IsEqual(double d1, double d2, double tolerance = .000_000_6)
+        {
+            double delta = d1 - d2;
+
+            if (delta < 0)
+            {
+                delta = -delta;
+            }
+
+            return delta < tolerance;
+        }
+
+        private static string[] GetTestData(string testDataFileName)
+        {
+            string[] lines = ReadTextFile(testDataFileName);
+            return lines;
+        }
+
+        private static string[] ReadTextFile(string fileName)
+        {
+            string location = Assembly.GetExecutingAssembly().Location;
+            string rootDirectory = Path.GetDirectoryName(location);
+            // ReSharper disable once AssignNullToNotNullAttribute
+            string fullFileName = Path.Combine(rootDirectory, fileName);
+            string[] fileLines = File.ReadAllLines(fullFileName);
+
+            return fileLines;
         }
 
         #endregion
@@ -225,11 +251,6 @@ namespace MostDistantProblem
 
     public class Point
     {
-        public Point()
-        {
-
-        }
-
         public Point(int x, int y)
         {
             X = x;
