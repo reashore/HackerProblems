@@ -16,6 +16,7 @@ namespace SumarFloatingRocksProblem
 
             int gcf1 = Gcf(2, 4);
             int gcf2 = Gcf(3, 9);
+            int gcf3 = Gcf(3, 3);
 
             Test0();
             Test1();
@@ -81,6 +82,28 @@ namespace SumarFloatingRocksProblem
             // vertical line
             if (x1 == x2)
             {
+                WriteLine("Vertical line");
+
+                if (y1 < y2)
+                {
+                    Swap(ref y1, ref y2);
+                }
+
+                int difference = y1 - y2 - 1;
+
+                if (difference < 0)
+                {
+                    difference = -difference;
+                }
+
+                return difference;
+            }
+
+            // horizontal line
+            if (y1 == y2)
+            {
+                WriteLine("Horizontal line");
+
                 if (y1 < y2)
                 {
                     Swap(ref y1, ref y2);

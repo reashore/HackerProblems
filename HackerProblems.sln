@@ -275,6 +275,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FillingJarsProblem", "Filli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumarFloatingRocksProblem", "SumarFloatingRocksProblem\SumarFloatingRocksProblem.csproj", "{727FA1A5-9635-4E89-8C32-9A20C06F817F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingTownsProblem", "ConnectingTownsProblem\ConnectingTownsProblem.csproj", "{FBC933B4-0722-48EA-A277-02A1C943FA50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -813,6 +815,10 @@ Global
 		{727FA1A5-9635-4E89-8C32-9A20C06F817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727FA1A5-9635-4E89-8C32-9A20C06F817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727FA1A5-9635-4E89-8C32-9A20C06F817F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
