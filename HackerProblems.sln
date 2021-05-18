@@ -277,6 +277,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumarFloatingRocksProblem",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingTownsProblem", "ConnectingTownsProblem\ConnectingTownsProblem.csproj", "{FBC933B4-0722-48EA-A277-02A1C943FA50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussianPeasantExponentiationProblem", "RussianPeasantExponentiationProblem\RussianPeasantExponentiationProblem.csproj", "{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostDistantProblem", "MostDistantProblem\MostDistantProblem.csproj", "{44F2365D-9072-4D1D-A92A-045AE57C3ED6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -819,6 +823,14 @@ Global
 		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC933B4-0722-48EA-A277-02A1C943FA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
