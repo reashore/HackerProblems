@@ -14,10 +14,21 @@ namespace MostDistantProblem
                 new List<int>() {-1, 0},
                 new List<int>() {1, 0},
                 new List<int>() {0, 1},
-                new List<int>() {0, -1},
+                new List<int>() {0, -1}
             };
             double maximumDistance = Solve(pointList);
-            WriteLine($"maximumDistance = {maximumDistance}");
+            WriteLine($"maximumDistance = {maximumDistance}");          // 2
+
+            pointList = new()
+            {
+                new List<int>() {0, -5},
+                new List<int>() {-7, 0},
+                new List<int>() {0, -6},
+                new List<int>() {-4, 0},
+                new List<int>() {0, 0}
+            };
+            maximumDistance = Solve(pointList);
+            WriteLine($"maximumDistance = {maximumDistance}");          // 9.219544457293
         }
 
         private static double Solve(List<List<int>> points)
@@ -27,6 +38,7 @@ namespace MostDistantProblem
             int maxX = int.MinValue;
             int minY = int.MaxValue;
             int maxY = int.MinValue;
+            double maxDistance;
 
             foreach (Point point in pointList)
             {
@@ -54,12 +66,77 @@ namespace MostDistantProblem
                 }
             }
 
-            int distance1 = maxX - minX;
-            int distance2 = maxY - minY;
+            double maximumDistance = GetMaximumDistance(minX, maxX, minY, maxY);
 
-            return distance1 > distance2 ? distance1 : distance2;
+            return maximumDistance;
         }
 
+        private static double GetMaximumDistance(int minX, int maxX, int minY, int maxY)
+        {
+            double maximumDistance = double.MinValue;
+
+            //---------------------------------------------
+
+            Point p1 = new Point(minX, 0);
+            Point p2 = new Point(maxX, 0);
+            double distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            p1 = new Point(0, minY);
+            p2 = new Point(0, maxY);
+            distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            //---------------------------------------------
+
+            p1 = new Point(minX, 0);
+            p2 = new Point(0, maxY);
+            distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            p1 = new Point(maxX, 0);
+            p2 = new Point(0, maxY);
+            distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            //---------------------------------------------
+
+            p1 = new Point(maxX, 0);
+            p2 = new Point(0, minY);
+            distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            p1 = new Point(maxX, 0);
+            p2 = new Point(0, maxY);
+            distance = GetDistance2(p1, p2);
+
+            if (distance > maximumDistance)
+            {
+                maximumDistance = distance;
+            }
+
+            return maximumDistance;
+        }
 
         #region solution 1
 
