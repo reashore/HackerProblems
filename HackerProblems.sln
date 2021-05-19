@@ -273,13 +273,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HalloweenPartyProblem", "Ha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FillingJarsProblem", "FillingJarsProblem\FillingJarsProblem.csproj", "{E55E2912-7616-4947-8CBC-C8E397C9E4BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumarFloatingRocksProblem", "SumarFloatingRocksProblem\SumarFloatingRocksProblem.csproj", "{727FA1A5-9635-4E89-8C32-9A20C06F817F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumarFloatingRocksProblem", "SumarFloatingRocksProblem\SumarFloatingRocksProblem.csproj", "{727FA1A5-9635-4E89-8C32-9A20C06F817F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingTownsProblem", "ConnectingTownsProblem\ConnectingTownsProblem.csproj", "{FBC933B4-0722-48EA-A277-02A1C943FA50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectingTownsProblem", "ConnectingTownsProblem\ConnectingTownsProblem.csproj", "{FBC933B4-0722-48EA-A277-02A1C943FA50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussianPeasantExponentiationProblem", "RussianPeasantExponentiationProblem\RussianPeasantExponentiationProblem.csproj", "{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussianPeasantExponentiationProblem", "RussianPeasantExponentiationProblem\RussianPeasantExponentiationProblem.csproj", "{7E5E5E63-1015-48AD-A3DE-EAA7AA37F267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostDistantProblem", "MostDistantProblem\MostDistantProblem.csproj", "{44F2365D-9072-4D1D-A92A-045AE57C3ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MostDistantProblem", "MostDistantProblem\MostDistantProblem.csproj", "{44F2365D-9072-4D1D-A92A-045AE57C3ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentifySmithNumbersProblem", "IdentifySmithNumbersProblem\IdentifySmithNumbersProblem.csproj", "{D212E872-AAB3-471B-B899-51AAC44B128B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -831,6 +833,10 @@ Global
 		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F2365D-9072-4D1D-A92A-045AE57C3ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D212E872-AAB3-471B-B899-51AAC44B128B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D212E872-AAB3-471B-B899-51AAC44B128B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D212E872-AAB3-471B-B899-51AAC44B128B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D212E872-AAB3-471B-B899-51AAC44B128B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
