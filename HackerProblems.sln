@@ -285,6 +285,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentifySmithNumbersProblem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciFindingProblem", "FibonacciFindingProblem\FibonacciFindingProblem.csproj", "{C11F5E8B-A74E-4081-9C73-3081DBC57308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormingMagicSquare", "FormingMagicSquare\FormingMagicSquare.csproj", "{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -843,6 +845,10 @@ Global
 		{C11F5E8B-A74E-4081-9C73-3081DBC57308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C11F5E8B-A74E-4081-9C73-3081DBC57308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C11F5E8B-A74E-4081-9C73-3081DBC57308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
