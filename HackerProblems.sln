@@ -281,13 +281,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussianPeasantExponentiatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MostDistantProblem", "MostDistantProblem\MostDistantProblem.csproj", "{44F2365D-9072-4D1D-A92A-045AE57C3ED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentifySmithNumbersProblem", "IdentifySmithNumbersProblem\IdentifySmithNumbersProblem.csproj", "{D212E872-AAB3-471B-B899-51AAC44B128B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentifySmithNumbersProblem", "IdentifySmithNumbersProblem\IdentifySmithNumbersProblem.csproj", "{D212E872-AAB3-471B-B899-51AAC44B128B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciFindingProblem", "FibonacciFindingProblem\FibonacciFindingProblem.csproj", "{C11F5E8B-A74E-4081-9C73-3081DBC57308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciFindingProblem", "FibonacciFindingProblem\FibonacciFindingProblem.csproj", "{C11F5E8B-A74E-4081-9C73-3081DBC57308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormingMagicSquare", "FormingMagicSquare\FormingMagicSquare.csproj", "{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormingMagicSquare", "FormingMagicSquare\FormingMagicSquare.csproj", "{D2C1EB55-3C47-4AFA-82DD-B1297BBCBBEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeparateNumbersProblem", "SeparateNumbersProblem\SeparateNumbersProblem.csproj", "{45026DDD-1606-4D6C-BFB2-902E161ED925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeparateNumbersProblem", "SeparateNumbersProblem\SeparateNumbersProblem.csproj", "{45026DDD-1606-4D6C-BFB2-902E161ED925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructingNumberProblem", "ConstructingNumberProblem\ConstructingNumberProblem.csproj", "{EA77D5B2-583B-4E6D-878F-C5278986DD74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -855,6 +857,10 @@ Global
 		{45026DDD-1606-4D6C-BFB2-902E161ED925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45026DDD-1606-4D6C-BFB2-902E161ED925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45026DDD-1606-4D6C-BFB2-902E161ED925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA77D5B2-583B-4E6D-878F-C5278986DD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA77D5B2-583B-4E6D-878F-C5278986DD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA77D5B2-583B-4E6D-878F-C5278986DD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA77D5B2-583B-4E6D-878F-C5278986DD74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
