@@ -295,6 +295,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingBookProblem", "Drawi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpingCloudsRevisitedProblem", "JumpingCloudsRevisitedProblem\JumpingCloudsRevisitedProblem.csproj", "{9EEC45B3-B72D-4B81-A066-2660AC3178D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch", "GridSearch\GridSearch.csproj", "{53A66466-2526-458A-AA65-B43FAEFD1529}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -873,6 +875,10 @@ Global
 		{9EEC45B3-B72D-4B81-A066-2660AC3178D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EEC45B3-B72D-4B81-A066-2660AC3178D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EEC45B3-B72D-4B81-A066-2660AC3178D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A66466-2526-458A-AA65-B43FAEFD1529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A66466-2526-458A-AA65-B43FAEFD1529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A66466-2526-458A-AA65-B43FAEFD1529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A66466-2526-458A-AA65-B43FAEFD1529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
