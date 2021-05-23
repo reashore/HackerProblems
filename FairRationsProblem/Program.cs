@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FairRationsProblem
 {
@@ -6,50 +7,27 @@ namespace FairRationsProblem
     {
         internal static void Main()
         {
-            int[] array = {4, 5, 6, 7};
-            int minLoaves = GetFairRations(array);                      // 4
+            List<int> array = new List<int>{4, 5, 6, 7};
+            string minLoaves = FairRations(array);                   // 4
             Console.WriteLine($"minLoaves = {minLoaves}");
 
-            array = new[] { 2, 3, 4, 5, 6 };
-            minLoaves = GetFairRations(array);                          // 4
+            array = new List<int>{ 2, 3, 4, 5, 6 };
+            minLoaves = FairRations(array);                          // 4
             Console.WriteLine($"minLoaves = {minLoaves}");
 
-            array = new[] { 1, 2 };
-            minLoaves = GetFairRations(array);                          // 0 NO
+            array = new List<int>() { 1, 2 };
+            minLoaves = FairRations(array);                          // NO
             Console.WriteLine($"minLoaves = {minLoaves}");
         }
 
-        private static void PrintArray(int[] array)
+        private static string FairRations(List<int> array)
         {
-            Console.Write("[");
-
-            foreach (int element in array)
+            if (IsArraySumOdd(array))
             {
-                Console.Write($"{element}, ");
+                return "NO";
             }
 
-            Console.Write("]");
-            Console.WriteLine();
-        }
-
-        private static int GetFairRations(int[] array)
-        {
-            int sum = 0;
-
-            foreach (int element in array)
-            {
-                sum += element;
-            }
-
-            bool isSumOdd = sum % 2 != 0;
-
-            if (isSumOdd)
-            {
-                Console.WriteLine("NO");
-                return 0;
-            }
-
-            int len = array.Length;
+            int len = array.Count;
             int numLoaves = 0;
 
             for (int n = 0; n < len; n++)
@@ -63,14 +41,26 @@ namespace FairRationsProblem
                 numLoaves += 2;
             }
 
-            bool isEven = IsEven(array);
-
-            return isEven ? numLoaves : 0;
+            bool isEven = IsArrayAllEvenElements(array);
+            return isEven ? numLoaves.ToString() : "NO";
         }
 
-        private static void GiveLoaf(int[] array, int n)
+        private static bool IsArraySumOdd(List<int> array)
         {
-            int len = array.Length;
+            int sum = 0;
+
+            foreach (int element in array)
+            {
+                sum += element;
+            }
+
+            bool isArraySumOdd = sum % 2 != 0;
+            return isArraySumOdd;
+        }
+
+        private static void GiveLoaf(List<int> array, int n)
+        {
+            int len = array.Count;
 
             array[n]++;
 
@@ -88,7 +78,7 @@ namespace FairRationsProblem
             }
         }
 
-        private static bool IsEven(int[] array)
+        private static bool IsArrayAllEvenElements(List<int> array)
         {
             foreach (int element in array)
             {
